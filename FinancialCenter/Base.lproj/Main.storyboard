@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Financial Center Check-In Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-ve-idq">
@@ -24,10 +25,79 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(FCCA)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tad-cX-egW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="iQh-Rs-X3U"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iQh-Rs-X3U"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="iQh-Rs-X3U"/>
+                                    </mask>
+                                </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIE-Zo-2Wf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="215" y="357" width="84" height="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2WB-sy-Ww2">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="338" y="360" width="193" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOy-8c-Vdj">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="215" y="418" width="84" height="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSR-zL-ja5">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="338" y="421" width="193" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxp-xS-1dW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="234" y="520" width="89" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo8-qd-Upv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="395" y="520" width="78" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.51400403069043143" green="0.92891272553425541" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -38,12 +108,14 @@
                             <constraint firstItem="KXe-ve-idq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="Geo-05-9wi">
                                 <variation key="heightClass=regular" constant="45"/>
                             </constraint>
+                            <constraint firstItem="tad-cX-egW" firstAttribute="centerX" secondItem="KXe-ve-idq" secondAttribute="centerX" id="Mft-C3-l56"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KXe-ve-idq" secondAttribute="trailing" constant="10" id="PCa-8E-CvR">
                                 <variation key="heightClass=regular" constant="-5"/>
                             </constraint>
                             <constraint firstItem="tad-cX-egW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="136" id="Vrh-L9-TTm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tad-cX-egW" secondAttribute="trailing" constant="137" id="nIv-2B-K5S"/>
                             <constraint firstItem="KXe-ve-idq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="v38-aw-EJ4"/>
+                            <constraint firstItem="tad-cX-egW" firstAttribute="top" secondItem="KXe-ve-idq" secondAttribute="bottom" constant="5" id="xiB-ik-XvH"/>
                             <constraint firstItem="KXe-ve-idq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="xuG-yZ-EA4">
                                 <variation key="heightClass=regular" constant="-5"/>
                             </constraint>
@@ -52,6 +124,12 @@
                             <mask key="subviews">
                                 <exclude reference="KXe-ve-idq"/>
                                 <exclude reference="tad-cX-egW"/>
+                                <exclude reference="wIE-Zo-2Wf"/>
+                                <exclude reference="2WB-sy-Ww2"/>
+                                <exclude reference="XOy-8c-Vdj"/>
+                                <exclude reference="GSR-zL-ja5"/>
+                                <exclude reference="kxp-xS-1dW"/>
+                                <exclude reference="uo8-qd-Upv"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Geo-05-9wi"/>
@@ -59,8 +137,10 @@
                                 <exclude reference="v38-aw-EJ4"/>
                                 <exclude reference="xuG-yZ-EA4"/>
                                 <exclude reference="BGU-tJ-FsS"/>
+                                <exclude reference="Mft-C3-l56"/>
                                 <exclude reference="Vrh-L9-TTm"/>
                                 <exclude reference="nIv-2B-K5S"/>
+                                <exclude reference="xiB-ik-XvH"/>
                                 <exclude reference="Fbp-vP-WJH"/>
                             </mask>
                         </variation>
@@ -68,6 +148,12 @@
                             <mask key="subviews">
                                 <include reference="KXe-ve-idq"/>
                                 <include reference="tad-cX-egW"/>
+                                <include reference="wIE-Zo-2Wf"/>
+                                <include reference="2WB-sy-Ww2"/>
+                                <include reference="XOy-8c-Vdj"/>
+                                <include reference="GSR-zL-ja5"/>
+                                <include reference="kxp-xS-1dW"/>
+                                <include reference="uo8-qd-Upv"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Geo-05-9wi"/>
@@ -75,17 +161,19 @@
                                 <exclude reference="v38-aw-EJ4"/>
                                 <include reference="xuG-yZ-EA4"/>
                                 <include reference="BGU-tJ-FsS"/>
-                                <include reference="Vrh-L9-TTm"/>
-                                <include reference="nIv-2B-K5S"/>
+                                <include reference="Mft-C3-l56"/>
+                                <exclude reference="Vrh-L9-TTm"/>
+                                <exclude reference="nIv-2B-K5S"/>
+                                <include reference="xiB-ik-XvH"/>
                                 <exclude reference="Fbp-vP-WJH"/>
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.5" y="139.125"/>
+            <point key="canvasLocation" x="138" y="138.75"/>
         </scene>
     </scenes>
 </document>
