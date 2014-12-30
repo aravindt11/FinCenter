@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,11 +16,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Financial Center Check-In Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-ve-idq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(FCCA)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tad-cX-egW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51400403069043143" green="0.92891272553425541" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tad-cX-egW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="74" id="BGU-tJ-FsS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KXe-ve-idq" secondAttribute="bottom" constant="618" id="Fbp-vP-WJH">
+                                <variation key="heightClass=regular" constant="618"/>
+                            </constraint>
+                            <constraint firstItem="KXe-ve-idq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="Geo-05-9wi">
+                                <variation key="heightClass=regular" constant="45"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="KXe-ve-idq" secondAttribute="trailing" constant="10" id="PCa-8E-CvR">
+                                <variation key="heightClass=regular" constant="-5"/>
+                            </constraint>
+                            <constraint firstItem="tad-cX-egW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="136" id="Vrh-L9-TTm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tad-cX-egW" secondAttribute="trailing" constant="137" id="nIv-2B-K5S"/>
+                            <constraint firstItem="KXe-ve-idq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="v38-aw-EJ4"/>
+                            <constraint firstItem="KXe-ve-idq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="xuG-yZ-EA4">
+                                <variation key="heightClass=regular" constant="-5"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KXe-ve-idq"/>
+                                <exclude reference="tad-cX-egW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Geo-05-9wi"/>
+                                <exclude reference="PCa-8E-CvR"/>
+                                <exclude reference="v38-aw-EJ4"/>
+                                <exclude reference="xuG-yZ-EA4"/>
+                                <exclude reference="BGU-tJ-FsS"/>
+                                <exclude reference="Vrh-L9-TTm"/>
+                                <exclude reference="nIv-2B-K5S"/>
+                                <exclude reference="Fbp-vP-WJH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="KXe-ve-idq"/>
+                                <include reference="tad-cX-egW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Geo-05-9wi"/>
+                                <include reference="PCa-8E-CvR"/>
+                                <exclude reference="v38-aw-EJ4"/>
+                                <include reference="xuG-yZ-EA4"/>
+                                <include reference="BGU-tJ-FsS"/>
+                                <include reference="Vrh-L9-TTm"/>
+                                <include reference="nIv-2B-K5S"/>
+                                <exclude reference="Fbp-vP-WJH"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.5" y="139.125"/>
         </scene>
     </scenes>
 </document>
