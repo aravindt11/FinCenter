@@ -1,0 +1,37 @@
+{
+                "members": [{
+                             "serialNo": "1",
+                             "memberName": "Zack Dawn",
+                             "checkInTime":"Dec 30, 2014 10:10:00 AM",
+                             "hasAppointment": "No",
+                             "status": "In Queue"
+                             },
+                            {
+                            "serialNo": "2",
+                            "memberName": "Paul Hussel",
+                            "checkInTime":"Dec 30, 2014 10:12:00 AM",
+                            "hasAppointment": "No",
+                            "status": "In Queue"
+                            },
+                            {
+                            "serialNo": "3",
+                            "memberName": "George Lyn",
+                            "checkInTime":"Dec 30, 2014 10:15:00 AM",
+                            "hasAppointment": "No",
+                            "status": "In Queue"
+                            },
+                            {
+                            "serialNo": "4",
+                            "memberName": "Fran Smith",
+                            "checkInTime":"Dec 30, 2014 11:10:00 AM",
+                            "hasAppointment": "No",
+                            "status": "In Queue"
+                            },
+                            {
+                            "serialNo": "5",
+                            "memberName": "Rob Travis",
+                            "checkInTime":"Dec 30, 2014 11:40:00 AM",
+                            "hasAppointment": "No",
+                            "status": "In Queue"
+                            }]
+}

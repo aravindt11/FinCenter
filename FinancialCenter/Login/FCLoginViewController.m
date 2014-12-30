@@ -7,6 +7,7 @@
 //
 
 #import "FCLoginViewController.h"
+#import "FCLocalDataController.h"
 
 @interface FCLoginViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [FCLocalDataController fetchMemberQueueListWithcomplitionHandler:^(NSArray *memberList, NSError *error){
+        NSLog(@"member list from server %@", memberList);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

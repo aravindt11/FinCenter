@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103CC07C1A5328A200F7F98A /* FCLocalDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 103CC07B1A5328A200F7F98A /* FCLocalDataController.m */; };
+		103CC07E1A5329EF00F7F98A /* StubbedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 103CC07D1A5329EF00F7F98A /* StubbedData.json */; };
 		1080FF271A5265FE0082FE09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF261A5265FE0082FE09 /* main.m */; };
 		1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF291A5265FE0082FE09 /* AppDelegate.m */; };
 		1080FF301A5265FE0082FE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1080FF2E1A5265FE0082FE09 /* Main.storyboard */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		103CC07A1A5328A200F7F98A /* FCLocalDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCLocalDataController.h; path = FinancialCenter/FCLocalDataController.h; sourceTree = SOURCE_ROOT; };
+		103CC07B1A5328A200F7F98A /* FCLocalDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCLocalDataController.m; path = FinancialCenter/FCLocalDataController.m; sourceTree = SOURCE_ROOT; };
+		103CC07D1A5329EF00F7F98A /* StubbedData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = StubbedData.json; path = FinancialCenter/StubbedData.json; sourceTree = SOURCE_ROOT; };
 		1080FF211A5265FE0082FE09 /* FinancialCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1080FF251A5265FE0082FE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1080FF261A5265FE0082FE09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		103CC0761A5327C100F7F98A /* Local Data */ = {
+			isa = PBXGroup;
+			children = (
+				103CC07A1A5328A200F7F98A /* FCLocalDataController.h */,
+				103CC07B1A5328A200F7F98A /* FCLocalDataController.m */,
+				103CC07D1A5329EF00F7F98A /* StubbedData.json */,
+			);
+			name = "Local Data";
+			sourceTree = "<group>";
+		};
 		1080FF181A5265FE0082FE09 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +154,7 @@
 		1080FF811A526D3B0082FE09 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				103CC0761A5327C100F7F98A /* Local Data */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -242,6 +258,7 @@
 				1080FF301A5265FE0082FE09 /* Main.storyboard in Resources */,
 				1080FF351A5265FE0082FE09 /* LaunchScreen.xib in Resources */,
 				1080FF321A5265FE0082FE09 /* Images.xcassets in Resources */,
+				103CC07E1A5329EF00F7F98A /* StubbedData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */,
+				103CC07C1A5328A200F7F98A /* FCLocalDataController.m in Sources */,
 				1080FF271A5265FE0082FE09 /* main.m in Sources */,
 				1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */,
 			);
