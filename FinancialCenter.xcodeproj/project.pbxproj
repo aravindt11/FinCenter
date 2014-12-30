@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1080FF271A5265FE0082FE09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF261A5265FE0082FE09 /* main.m */; };
+		1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF291A5265FE0082FE09 /* AppDelegate.m */; };
+		1080FF2D1A5265FE0082FE09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF2C1A5265FE0082FE09 /* ViewController.m */; };
+		1080FF301A5265FE0082FE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1080FF2E1A5265FE0082FE09 /* Main.storyboard */; };
+		1080FF321A5265FE0082FE09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1080FF311A5265FE0082FE09 /* Images.xcassets */; };
+		1080FF351A5265FE0082FE09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080FF331A5265FE0082FE09 /* LaunchScreen.xib */; };
+		1080FF411A5265FE0082FE09 /* FinancialCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */; };
+		1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF851A526FE40082FE09 /* FCLoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1080FF3B1A5265FE0082FE09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1080FF191A5265FE0082FE09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1080FF201A5265FE0082FE09;
+			remoteInfo = FinancialCenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1080FF211A5265FE0082FE09 /* FinancialCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1080FF251A5265FE0082FE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1080FF261A5265FE0082FE09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1080FF281A5265FE0082FE09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1080FF291A5265FE0082FE09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1080FF2B1A5265FE0082FE09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1080FF2C1A5265FE0082FE09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1080FF2F1A5265FE0082FE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1080FF311A5265FE0082FE09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1080FF341A5265FE0082FE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1080FF3A1A5265FE0082FE09 /* FinancialCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancialCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1080FF3F1A5265FE0082FE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinancialCenterTests.m; sourceTree = "<group>"; };
+		1080FF841A526FE40082FE09 /* FCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLoginViewController.h; sourceTree = "<group>"; };
+		1080FF851A526FE40082FE09 /* FCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCLoginViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1080FF1E1A5265FE0082FE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1080FF371A5265FE0082FE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1080FF181A5265FE0082FE09 = {
+			isa = PBXGroup;
+			children = (
+				1080FF231A5265FE0082FE09 /* FinancialCenter */,
+				1080FF3D1A5265FE0082FE09 /* FinancialCenterTests */,
+				1080FF221A5265FE0082FE09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1080FF221A5265FE0082FE09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1080FF211A5265FE0082FE09 /* FinancialCenter.app */,
+				1080FF3A1A5265FE0082FE09 /* FinancialCenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1080FF231A5265FE0082FE09 /* FinancialCenter */ = {
+			isa = PBXGroup;
+			children = (
+				1080FF831A526DB70082FE09 /* Flow Manager */,
+				1080FF7F1A526D3B0082FE09 /* WealthManager */,
+				1080FF801A526D3B0082FE09 /* LocalData */,
+				1080FF811A526D3B0082FE09 /* Networking */,
+				1080FF821A526D3B0082FE09 /* Login */,
+				1080FF281A5265FE0082FE09 /* AppDelegate.h */,
+				1080FF291A5265FE0082FE09 /* AppDelegate.m */,
+				1080FF2B1A5265FE0082FE09 /* ViewController.h */,
+				1080FF2C1A5265FE0082FE09 /* ViewController.m */,
+				1080FF2E1A5265FE0082FE09 /* Main.storyboard */,
+				1080FF311A5265FE0082FE09 /* Images.xcassets */,
+				1080FF331A5265FE0082FE09 /* LaunchScreen.xib */,
+				1080FF241A5265FE0082FE09 /* Supporting Files */,
+			);
+			path = FinancialCenter;
+			sourceTree = "<group>";
+		};
+		1080FF241A5265FE0082FE09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1080FF251A5265FE0082FE09 /* Info.plist */,
+				1080FF261A5265FE0082FE09 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1080FF3D1A5265FE0082FE09 /* FinancialCenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */,
+				1080FF3E1A5265FE0082FE09 /* Supporting Files */,
+			);
+			path = FinancialCenterTests;
+			sourceTree = "<group>";
+		};
+		1080FF3E1A5265FE0082FE09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1080FF3F1A5265FE0082FE09 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1080FF7F1A526D3B0082FE09 /* WealthManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WealthManager;
+			sourceTree = "<group>";
+		};
+		1080FF801A526D3B0082FE09 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		1080FF811A526D3B0082FE09 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1080FF821A526D3B0082FE09 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1080FF841A526FE40082FE09 /* FCLoginViewController.h */,
+				1080FF851A526FE40082FE09 /* FCLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1080FF831A526DB70082FE09 /* Flow Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Flow Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1080FF201A5265FE0082FE09 /* FinancialCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1080FF441A5265FE0082FE09 /* Build configuration list for PBXNativeTarget "FinancialCenter" */;
+			buildPhases = (
+				1080FF1D1A5265FE0082FE09 /* Sources */,
+				1080FF1E1A5265FE0082FE09 /* Frameworks */,
+				1080FF1F1A5265FE0082FE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinancialCenter;
+			productName = FinancialCenter;
+			productReference = 1080FF211A5265FE0082FE09 /* FinancialCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1080FF391A5265FE0082FE09 /* FinancialCenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1080FF471A5265FE0082FE09 /* Build configuration list for PBXNativeTarget "FinancialCenterTests" */;
+			buildPhases = (
+				1080FF361A5265FE0082FE09 /* Sources */,
+				1080FF371A5265FE0082FE09 /* Frameworks */,
+				1080FF381A5265FE0082FE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1080FF3C1A5265FE0082FE09 /* PBXTargetDependency */,
+			);
+			name = FinancialCenterTests;
+			productName = FinancialCenterTests;
+			productReference = 1080FF3A1A5265FE0082FE09 /* FinancialCenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1080FF191A5265FE0082FE09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = USAA;
+				TargetAttributes = {
+					1080FF201A5265FE0082FE09 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					1080FF391A5265FE0082FE09 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 1080FF201A5265FE0082FE09;
+					};
+				};
+			};
+			buildConfigurationList = 1080FF1C1A5265FE0082FE09 /* Build configuration list for PBXProject "FinancialCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1080FF181A5265FE0082FE09;
+			productRefGroup = 1080FF221A5265FE0082FE09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1080FF201A5265FE0082FE09 /* FinancialCenter */,
+				1080FF391A5265FE0082FE09 /* FinancialCenterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1080FF1F1A5265FE0082FE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1080FF301A5265FE0082FE09 /* Main.storyboard in Resources */,
+				1080FF351A5265FE0082FE09 /* LaunchScreen.xib in Resources */,
+				1080FF321A5265FE0082FE09 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1080FF381A5265FE0082FE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1080FF1D1A5265FE0082FE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1080FF2D1A5265FE0082FE09 /* ViewController.m in Sources */,
+				1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */,
+				1080FF271A5265FE0082FE09 /* main.m in Sources */,
+				1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1080FF361A5265FE0082FE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1080FF411A5265FE0082FE09 /* FinancialCenterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1080FF3C1A5265FE0082FE09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1080FF201A5265FE0082FE09 /* FinancialCenter */;
+			targetProxy = 1080FF3B1A5265FE0082FE09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1080FF2E1A5265FE0082FE09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1080FF2F1A5265FE0082FE09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1080FF331A5265FE0082FE09 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1080FF341A5265FE0082FE09 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1080FF421A5265FE0082FE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1080FF431A5265FE0082FE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1080FF451A5265FE0082FE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FinancialCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1080FF461A5265FE0082FE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FinancialCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1080FF481A5265FE0082FE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FinancialCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinancialCenter.app/FinancialCenter";
+			};
+			name = Debug;
+		};
+		1080FF491A5265FE0082FE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FinancialCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinancialCenter.app/FinancialCenter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1080FF1C1A5265FE0082FE09 /* Build configuration list for PBXProject "FinancialCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1080FF421A5265FE0082FE09 /* Debug */,
+				1080FF431A5265FE0082FE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1080FF441A5265FE0082FE09 /* Build configuration list for PBXNativeTarget "FinancialCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1080FF451A5265FE0082FE09 /* Debug */,
+				1080FF461A5265FE0082FE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1080FF471A5265FE0082FE09 /* Build configuration list for PBXNativeTarget "FinancialCenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1080FF481A5265FE0082FE09 /* Debug */,
+				1080FF491A5265FE0082FE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1080FF191A5265FE0082FE09 /* Project object */;
+}
