@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *sno;
 @property (weak, nonatomic) IBOutlet UILabel *time;
 @property (weak, nonatomic) IBOutlet UILabel *appointment;
+@property (weak, nonatomic) IBOutlet UIButton *assign;
 @property (weak, nonatomic) IBOutlet UILabel *status;
 
 @end

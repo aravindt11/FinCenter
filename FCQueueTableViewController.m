@@ -144,10 +144,15 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *myVC = [storyboard instantiateViewControllerWithIdentifier:@"whassign"];
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:buttonPosition];
+    
+    FCMemberTableViewCell *cell= (FCMemberTableViewCell*)[self.tableView cellForRowAtIndexPath:indexPath ];
     
     self.WmDataPopover = [[UIPopoverController alloc] initWithContentViewController:myVC];
-    self.WmDataPopover.popoverContentSize = CGSizeMake(320.0, 400.0);
-    [self.WmDataPopover presentPopoverFromRect:[(UIButton *)sender frame]
+    
+    
+    [self.WmDataPopover presentPopoverFromRect:[(UITableViewCell *)cell frame]
                                           inView:self.view
                         permittedArrowDirections:UIPopoverArrowDirectionAny
                                         animated:YES];
