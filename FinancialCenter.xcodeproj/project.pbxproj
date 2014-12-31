@@ -16,6 +16,7 @@
 		1080FF351A5265FE0082FE09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080FF331A5265FE0082FE09 /* LaunchScreen.xib */; };
 		1080FF411A5265FE0082FE09 /* FinancialCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */; };
 		1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF851A526FE40082FE09 /* FCLoginViewController.m */; };
+		BE6B7EDC1A54693100CB2D6C /* FCQueueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6B7EDB1A54693100CB2D6C /* FCQueueTableViewController.m */; };
 		BEB63C8A1A538C570090FEA8 /* FCMemberviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */; };
 		BEB63C8D1A53A20C0090FEA8 /* FCMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */; };
 		BEB63C8F1A53BEAE0090FEA8 /* bullet_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB63C8E1A53BEAE0090FEA8 /* bullet_list@3x.png */; };
@@ -48,6 +49,8 @@
 		1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinancialCenterTests.m; sourceTree = "<group>"; };
 		1080FF841A526FE40082FE09 /* FCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLoginViewController.h; sourceTree = "<group>"; };
 		1080FF851A526FE40082FE09 /* FCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCLoginViewController.m; sourceTree = "<group>"; };
+		BE6B7EDA1A54693100CB2D6C /* FCQueueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQueueTableViewController.h; sourceTree = SOURCE_ROOT; };
+		BE6B7EDB1A54693100CB2D6C /* FCQueueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQueueTableViewController.m; sourceTree = SOURCE_ROOT; };
 		BEB63C881A538C570090FEA8 /* FCMemberviewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMemberviewTableViewController.h; sourceTree = "<group>"; };
 		BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMemberviewTableViewController.m; sourceTree = "<group>"; };
 		BEB63C8B1A53A20C0090FEA8 /* FCMemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMemberTableViewCell.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		1080FF7F1A526D3B0082FE09 /* WealthManager */ = {
 			isa = PBXGroup;
 			children = (
+				BE6B7EDA1A54693100CB2D6C /* FCQueueTableViewController.h */,
+				BE6B7EDB1A54693100CB2D6C /* FCQueueTableViewController.m */,
 			);
 			path = WealthManager;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6B7EDC1A54693100CB2D6C /* FCQueueTableViewController.m in Sources */,
 				1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */,
 				103CC07C1A5328A200F7F98A /* FCLocalDataController.m in Sources */,
 				BEB63C8D1A53A20C0090FEA8 /* FCMemberTableViewCell.m in Sources */,
