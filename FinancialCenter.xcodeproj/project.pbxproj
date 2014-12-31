@@ -17,6 +17,7 @@
 		1080FF411A5265FE0082FE09 /* FinancialCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */; };
 		1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF851A526FE40082FE09 /* FCLoginViewController.m */; };
 		BEB63C8A1A538C570090FEA8 /* FCMemberviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */; };
+		BEB63C8D1A53A20C0090FEA8 /* FCMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		1080FF851A526FE40082FE09 /* FCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCLoginViewController.m; sourceTree = "<group>"; };
 		BEB63C881A538C570090FEA8 /* FCMemberviewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMemberviewTableViewController.h; sourceTree = "<group>"; };
 		BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMemberviewTableViewController.m; sourceTree = "<group>"; };
+		BEB63C8B1A53A20C0090FEA8 /* FCMemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMemberTableViewCell.h; sourceTree = "<group>"; };
+		BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMemberTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,8 @@
 			children = (
 				BEB63C881A538C570090FEA8 /* FCMemberviewTableViewController.h */,
 				BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */,
+				BEB63C8B1A53A20C0090FEA8 /* FCMemberTableViewCell.h */,
+				BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */,
 			);
 			name = MemberView;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			files = (
 				1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */,
 				103CC07C1A5328A200F7F98A /* FCLocalDataController.m in Sources */,
+				BEB63C8D1A53A20C0090FEA8 /* FCMemberTableViewCell.m in Sources */,
 				BEB63C8A1A538C570090FEA8 /* FCMemberviewTableViewController.m in Sources */,
 				1080FF271A5265FE0082FE09 /* main.m in Sources */,
 				1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */,
@@ -420,6 +426,7 @@
 				INFOPLIST_FILE = FinancialCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -430,6 +437,7 @@
 				INFOPLIST_FILE = FinancialCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

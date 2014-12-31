@@ -8,6 +8,8 @@
 
 #import "FCLoginViewController.h"
 #import "FCLocalDataController.h"
+#import "FCMemberviewTableViewController.h"
+#import "AppDelegate.h"
 
 @interface FCLoginViewController ()
 
@@ -100,7 +102,16 @@
     {
         if([username isEqualToString:@"member"])
         {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            FCMemberviewTableViewController *myVC = (FCMemberviewTableViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Memberview"];
             
+            
+           
+            [self resignFirstResponder];
+            
+            [[[[UIApplication sharedApplication] delegate] window] setRootViewController:myVC];
+            
+
         }
         else if ([username isEqualToString:@"wealthmanager"])
         {

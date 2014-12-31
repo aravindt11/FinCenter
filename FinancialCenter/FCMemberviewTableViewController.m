@@ -7,15 +7,21 @@
 //
 
 #import "FCMemberviewTableViewController.h"
+#import "FCLocalDataController.h"
+#import "FCMemberTableViewCell.h"
 
 @interface FCMemberviewTableViewController ()
-
+@property (nonatomic,strong) NSArray *results;
 @end
 
 @implementation FCMemberviewTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [FCLocalDataController fetchMemberQueueListWithcomplitionHandler:^(NSArray *memberList, NSError *error){
+        self.results=memberList;
+        
+    }];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,26 +38,63 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+
+// Return the number of sections.
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    // Return the number of rows in the section.
     
-    // Configure the cell...
+    return   self.results.count;
+    }
+
+-(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    static NSString *CellIdentifier = @"headercell";
+    return [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Displaycell";
+    FCMemberTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    
+    if (cell == nil) {
+        cell=[[FCMemberTableViewCell alloc] init];
+        
+        
+    }
+    
+    NSDictionary *member = (self.results)[indexPath.row];
+   
+    
+    cell.sno.text=member[@"serialNo"];
+    cell.name.text=member[@"memberName"];
+    cell.appointment.text=member[@"hasAppointment"];
+    cell.status.text=member[@"status"];
+     NSDateFormatter *time = [[NSDateFormatter alloc] init];
+    [time setDateFormat:@"yyyy.MM.dd G 'at' HH:mm:ss zzz"];
+    NSDate *Date = [time dateFromString:member[@"checkInTime"]];
+    NSString *dateString = [NSDateFormatter localizedStringFromDate:Date
+                                                          dateStyle:NSDateFormatterNoStyle
+                                                          timeStyle:NSDateFormatterShortStyle];
+    
+    cell.time.text=dateString;
+
+    
     
     return cell;
+
 }
-*/
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 44.0;
+}
+- (BOOL)allowsHeaderViewsToFloat{
+    return YES;
+}
+
 
 /*
 // Override to support conditional editing of the table view.
