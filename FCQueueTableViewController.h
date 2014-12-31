@@ -10,5 +10,5 @@
 
 @interface FCQueueTableViewController : UITableViewController
 - (IBAction)assign:(id)sender;
-
+@property (nonatomic, strong) UIPopoverController *WmDataPopover;
 @end

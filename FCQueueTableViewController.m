@@ -142,5 +142,15 @@
 
 - (IBAction)assign:(id)sender {
     
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *myVC = [storyboard instantiateViewControllerWithIdentifier:@"whassign"];
+    
+    self.WmDataPopover = [[UIPopoverController alloc] initWithContentViewController:myVC];
+    self.WmDataPopover.popoverContentSize = CGSizeMake(320.0, 400.0);
+    [self.WmDataPopover presentPopoverFromRect:[(UIButton *)sender frame]
+                                          inView:self.view
+                        permittedArrowDirections:UIPopoverArrowDirectionAny
+                                        animated:YES];
+    
 }
 @end
