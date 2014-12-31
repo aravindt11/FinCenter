@@ -16,6 +16,7 @@
 		1080FF351A5265FE0082FE09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080FF331A5265FE0082FE09 /* LaunchScreen.xib */; };
 		1080FF411A5265FE0082FE09 /* FinancialCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */; };
 		1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF851A526FE40082FE09 /* FCLoginViewController.m */; };
+		BEB63C8A1A538C570090FEA8 /* FCMemberviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		1080FF401A5265FE0082FE09 /* FinancialCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinancialCenterTests.m; sourceTree = "<group>"; };
 		1080FF841A526FE40082FE09 /* FCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLoginViewController.h; sourceTree = "<group>"; };
 		1080FF851A526FE40082FE09 /* FCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCLoginViewController.m; sourceTree = "<group>"; };
+		BEB63C881A538C570090FEA8 /* FCMemberviewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMemberviewTableViewController.h; sourceTree = "<group>"; };
+		BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMemberviewTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 		1080FF231A5265FE0082FE09 /* FinancialCenter */ = {
 			isa = PBXGroup;
 			children = (
+				BEB63C871A538B970090FEA8 /* MemberView */,
 				1080FF831A526DB70082FE09 /* Flow Manager */,
 				1080FF7F1A526D3B0082FE09 /* WealthManager */,
 				1080FF801A526D3B0082FE09 /* LocalData */,
@@ -173,6 +177,15 @@
 			children = (
 			);
 			path = "Flow Manager";
+			sourceTree = "<group>";
+		};
+		BEB63C871A538B970090FEA8 /* MemberView */ = {
+			isa = PBXGroup;
+			children = (
+				BEB63C881A538C570090FEA8 /* FCMemberviewTableViewController.h */,
+				BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */,
+			);
+			name = MemberView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			files = (
 				1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */,
 				103CC07C1A5328A200F7F98A /* FCLocalDataController.m in Sources */,
+				BEB63C8A1A538C570090FEA8 /* FCMemberviewTableViewController.m in Sources */,
 				1080FF271A5265FE0082FE09 /* main.m in Sources */,
 				1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */,
 			);

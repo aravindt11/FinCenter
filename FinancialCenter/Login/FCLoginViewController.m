@@ -14,6 +14,7 @@
 @end
 
 @implementation FCLoginViewController
+@synthesize userId,password;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,5 +38,82 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+//Validate username and password based on client requirment
+
+
+-(Boolean)validateEmail:(NSString *)userid password:(NSString *)password
+{
+    return true;
+    
+}
+
+//Login with userid and password need to be implemented
+
+-(Boolean)logInWithUsername:(NSString *)userid password:(NSString *)password
+{
+    return true;
+    
+}
+
+- (IBAction)login:(id)sender {
+    
+    NSString *username=self.userId.text;
+    BOOL flag=true;
+    
+    NSString *passwordGot=self.password.text ;
+    
+
+    
+    if (username && passwordGot && username.length != 0 && passwordGot.length != 0) {
+        //Check username and password validation
+        if ([self validateEmail:username password:passwordGot]) {
+            
+            
+        }
+        else
+        {
+            flag=false;
+            [[[UIAlertView alloc] initWithTitle:@"User name and passowrd Not Valid"
+                                        message:@"Please Enter details!"
+                                       delegate:nil
+                              cancelButtonTitle:@"ok"
+                              otherButtonTitles:nil] show];
+        }
+        
+        // Begin login process
+    }
+    else
+    {
+        flag=false;
+        [[[UIAlertView alloc] initWithTitle:@"Missing Information"
+                                    message:@"Make sure you fill out all of the information!"
+                                   delegate:nil
+                          cancelButtonTitle:@"ok"
+                          otherButtonTitles:nil] show];
+        // Interrupt login process
+    }
+
+    if([self logInWithUsername:username password:passwordGot])
+        
+    {
+        if([username isEqualToString:@"member"])
+        {
+            
+        }
+        else if ([username isEqualToString:@"wealthmanager"])
+        {
+            
+        }
+        else{
+            //floor manger
+        }
+        
+    }
+}
+
+
+
 
 @end
