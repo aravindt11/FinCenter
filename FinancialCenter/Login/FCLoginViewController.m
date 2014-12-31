@@ -115,6 +115,15 @@
         }
         else if ([username isEqualToString:@"wealthmanager"])
         {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            FCMemberviewTableViewController *myVC = (FCMemberviewTableViewController *)[storyboard instantiateViewControllerWithIdentifier:@"whview"];
+            
+            
+            
+            [self resignFirstResponder];
+            
+            [[[[UIApplication sharedApplication] delegate] window] setRootViewController:myVC];
+
             
         }
         else{

@@ -18,6 +18,7 @@
 		1080FF861A526FE40082FE09 /* FCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080FF851A526FE40082FE09 /* FCLoginViewController.m */; };
 		BEB63C8A1A538C570090FEA8 /* FCMemberviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */; };
 		BEB63C8D1A53A20C0090FEA8 /* FCMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */; };
+		BEB63C8F1A53BEAE0090FEA8 /* bullet_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB63C8E1A53BEAE0090FEA8 /* bullet_list@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMemberviewTableViewController.m; sourceTree = "<group>"; };
 		BEB63C8B1A53A20C0090FEA8 /* FCMemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMemberTableViewCell.h; sourceTree = "<group>"; };
 		BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMemberTableViewCell.m; sourceTree = "<group>"; };
+		BEB63C8E1A53BEAE0090FEA8 /* bullet_list@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bullet_list@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		1080FF241A5265FE0082FE09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEB63C8E1A53BEAE0090FEA8 /* bullet_list@3x.png */,
 				1080FF251A5265FE0082FE09 /* Info.plist */,
 				1080FF261A5265FE0082FE09 /* main.m */,
 			);
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1080FF301A5265FE0082FE09 /* Main.storyboard in Resources */,
+				BEB63C8F1A53BEAE0090FEA8 /* bullet_list@3x.png in Resources */,
 				1080FF351A5265FE0082FE09 /* LaunchScreen.xib in Resources */,
 				1080FF321A5265FE0082FE09 /* Images.xcassets in Resources */,
 				103CC07E1A5329EF00F7F98A /* StubbedData.json in Resources */,
