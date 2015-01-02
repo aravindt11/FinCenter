@@ -20,6 +20,7 @@
 		BEB63C8A1A538C570090FEA8 /* FCMemberviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C891A538C570090FEA8 /* FCMemberviewTableViewController.m */; };
 		BEB63C8D1A53A20C0090FEA8 /* FCMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */; };
 		BEB63C8F1A53BEAE0090FEA8 /* bullet_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB63C8E1A53BEAE0090FEA8 /* bullet_list@3x.png */; };
+		BEF97BE91A57092500FA4210 /* FCCheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF97BE81A57092500FA4210 /* FCCheckinViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		BEB63C8B1A53A20C0090FEA8 /* FCMemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMemberTableViewCell.h; sourceTree = "<group>"; };
 		BEB63C8C1A53A20C0090FEA8 /* FCMemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMemberTableViewCell.m; sourceTree = "<group>"; };
 		BEB63C8E1A53BEAE0090FEA8 /* bullet_list@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bullet_list@3x.png"; sourceTree = "<group>"; };
+		BEF97BE71A57092500FA4210 /* FCCheckinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCheckinViewController.h; sourceTree = SOURCE_ROOT; };
+		BEF97BE81A57092500FA4210 /* FCCheckinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCheckinViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 			children = (
 				BE6B7EDA1A54693100CB2D6C /* FCQueueTableViewController.h */,
 				BE6B7EDB1A54693100CB2D6C /* FCQueueTableViewController.m */,
+				BEF97BE71A57092500FA4210 /* FCCheckinViewController.h */,
+				BEF97BE81A57092500FA4210 /* FCCheckinViewController.m */,
 			);
 			path = WealthManager;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6B7EDC1A54693100CB2D6C /* FCQueueTableViewController.m in Sources */,
+				BEF97BE91A57092500FA4210 /* FCCheckinViewController.m in Sources */,
 				1080FF2A1A5265FE0082FE09 /* AppDelegate.m in Sources */,
 				103CC07C1A5328A200F7F98A /* FCLocalDataController.m in Sources */,
 				BEB63C8D1A53A20C0090FEA8 /* FCMemberTableViewCell.m in Sources */,
