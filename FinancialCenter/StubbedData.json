@@ -2,35 +2,35 @@
                 "members": [{
                              "serialNo": "1",
                              "memberName": "Zack Dawn",
-                             "checkInTime":"Dec 30, 2014 10:10:00 AM",
+                             "checkInTime":"1996.07.10 AD at 5:08:56 PDT",
                              "hasAppointment": "No",
                              "status": "In Queue"
                              },
                             {
                             "serialNo": "2",
                             "memberName": "Paul Hussel",
-                            "checkInTime":"Dec 30, 2014 10:12:00 AM",
+                            "checkInTime":"1996.07.10 AD at 20:08:56 PDT",
                             "hasAppointment": "No",
                             "status": "In Queue"
                             },
                             {
                             "serialNo": "3",
                             "memberName": "George Lyn",
-                            "checkInTime":"Dec 30, 2014 10:15:00 AM",
+                            "checkInTime":"1996.07.10 AD at 19:08:56 PDT",
                             "hasAppointment": "No",
                             "status": "In Queue"
                             },
                             {
                             "serialNo": "4",
                             "memberName": "Fran Smith",
-                            "checkInTime":"Dec 30, 2014 11:10:00 AM",
+                            "checkInTime":"1996.07.10 AD at 4:08:56 PDT",
                             "hasAppointment": "No",
                             "status": "In Queue"
                             },
                             {
                             "serialNo": "5",
                             "memberName": "Rob Travis",
-                            "checkInTime":"Dec 30, 2014 11:40:00 AM",
+                            "checkInTime":"1996.07.10 AD at 1:08:56 PDT",
                             "hasAppointment": "No",
                             "status": "In Queue"
                             }]
